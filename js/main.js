@@ -1,27 +1,38 @@
- $(document).ready(function (e) {
+$(document).ready(function (e) {
+
 const employeeBox = `
-    <div class="employee-box">
-        <div class="employee-avatar-wrap">
-            <img src="./img/kol.jpg" alt="" width="100" height="100" class="employee-avatar">
-        </div>
-        <p class="employee-name">หมอลักษณ์ ฟันธง</p>
-        <p class="employee-des">ผู้ติดตาม 2.5 ล้าน คน • กำลังติดตาม 6 คน</p>
-        <button class="follow-btn">Follow</button>
-    </div>
+
+<div class="employee-box">
+
+<div class="employee-avatar-wrap">
+
+<img src="img/kolmoi.png" alt="" width="100" height="100" class="employee-avatar">
+
+</div>
+
+<p class="employee-name">หมอช้าง ทศพร ศรีตุลา</p>
+
+<p class="employee-des">ผู้ติดตาม 2.5 ล้าน คน • กำลังติดตาม 6 คน</p>
+
+<button class="follow-btn">Follow</button>
+
+</div>
+
 `;
 
-    const genderTop = '<div class="chat-content-gender-desc"><p class="title"></p><p class="title"></p></div>';
+   const genderTop = '<div class="chat-content-gender-desc"><p class="title"></p><p class="title"></p></div>';
     function t(e, t = !1, a = "") {
         var n = "",
             o = "",
             i = "";
         return (
-            "manager" === e && (n = '<img class="chat-content-desc-image" src="img/kol.png" alt="" />'),
+            "manager" === e &&
+                (n =
+                    '<img class="chat-content-desc-image" src="img/kolmoi1.png" alt="" style="border-radius: 50% !important; object-fit: cover !important; transform: scale(1.08) !important;" />'),
             t && ((o = "text-" + t), (i = ' class="p' + t + '"')),
             '<div class="chat-content-item ' + e + " " + o + '"><div class="chat-content-desc">' + n + '<div class="chat-content-desc-item ' + e + '"><p' + i + ">" + a + "</p></div></div></div>"
         );
     }
-    
 
     function a(a) {
         console.log('e', e.managerDialog[1]);
@@ -129,7 +140,7 @@ const employeeBox = `
         (e.managerDialog = [
             {
                 text:
-                    "สวัสดีค่ะ! ฉัน <b style='color: rgb(134, 144, 254);'>หมอลักษณ์ ฟันธง</b>! มีวันที่ดี",
+                    "สวัสดีค่ะ! ฉัน <b style='color: rgb(134, 144, 254);'>หมอช้าง ทศพร ศรีตุลา</b>! มีวันที่ดี",
             },
             { text: "การคาดการณ์ของฉันสำหรับครึ่งหลังของปี 2569 ของฉันทำให้ คนไทย ทั้งประเทศอึ้งกันไปหมด: 3ราศี 🙏เฮงสุดๆเฮงยืน🙏จะเริ่มทำเงินได้มาก⭐️ในขณะที่ 2 ราศีจะเงินขาดมือ " },
             { text: "เมื่อฉันมองดูตัวเลือกของคุณ ฉันเห็นบางสิ่งบางอย่างที่อาจเปลี่ยนชีวิตคุณในอนาคตได้" },
